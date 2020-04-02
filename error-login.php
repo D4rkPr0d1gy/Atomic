@@ -1,25 +1,7 @@
-<?php 
-session_start();
-
-$vars = $_SESSION['user_id'];
-
-
-if ($vars == null || $vars = '') {
-	header('Location: index.php');
-	die();
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<?php 
-
-require 'assets/head.php'
-
-?>
-
+    <?php require 'assets/head.php' ?>
 </head>
 <body>
 <header>
@@ -27,8 +9,8 @@ require 'assets/head.php'
 			<a class="logotipo" href="#">Atomic</a>
 			<div class="enlaces">
 				<a href="correo.php">Contacto</a>
-				<a href="home.php">Inicio</a>
-				<a href="logout.php">Salir</a>
+				<a href="index.php">Inicia Sesión</a>
+				<a href="signup.php">Registrate</a>
 				<button type="button" class="switch" id="switch" name="button">
 						<span><i class="fas fa-sun"></i></span>
 						<span><i class="fas fa-moon"></i></span>
@@ -36,15 +18,9 @@ require 'assets/head.php'
 			</div>
 		</nav>
 </header>
-<div class="contenedor">
-	
+    
 
-		
-	</div>
+<?php require 'assets/script.php' ?>
 
-	<?php 
-
-require 'assets/script.php'
-
-?></body>
+</body>
 </html>

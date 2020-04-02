@@ -4,7 +4,7 @@ session_start();
 $vars = $_SESSION['user_id'];
 
 		if ($vars == null || $vars = '') {
-			echo 'Usted no tiene autorización';
+			header('Location: index.php');
 			die();
 		}
 
@@ -21,7 +21,7 @@ require 'assets/head.php'
 <nav>
 			<a class="logotipo" href="#">Atomic</a>
 			<div class="enlaces">
-				<a href="#">Contacto</a>
+				<a href="correo.php">Contacto</a>
 				<a href="page.php">Page</a>
 				<a href="logout.php">Salir</a>
 				<button type="button" class="switch" id="switch" name="button">

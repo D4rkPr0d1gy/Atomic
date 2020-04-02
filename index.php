@@ -64,7 +64,7 @@ require 'assets/head.php'
 <header>
 <nav>
 			<a class="logotipo" href="#">Login Atomic</a>
-			<div class="enlaces">
+			            <div class="enlaces">
                         <a href="signup.php">Registrate</a>
                         <button type="button" class="switch" id="switch" name="button">
 						<span><i class="fas fa-sun"></i></span>
@@ -76,10 +76,7 @@ require 'assets/head.php'
 
 <div class="contenedor">
 
-    <?php if(!empty($message)): ?>
-      <p><?= $message ?></p>
-    <?php endif; ?>
-<br>
+ 
 
     <form action="proces.php" method="post">
         <h1>Login</h1>
